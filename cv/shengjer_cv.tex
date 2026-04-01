@@ -1,0 +1,234 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+\setstretch{1.03}
+
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{textgray}{HTML}{4A4A4A}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0pt}
+  {}
+  [\vspace{0.2ex}\titlerule]
+
+\titlespacing*{\section}{0pt}{0.9em}{0.45em}
+
+\newcommand{\nameheader}[1]{
+  {\fontsize{22}{24}\selectfont\bfseries #1}\par
+}
+
+\newcommand{\contactline}[1]{
+  {\small\color{textgray}#1}\par
+}
+
+\newcommand{\datedsubsection}[4]{
+  \vspace{0.2em}
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textit{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}
+}
+
+\newcommand{\datedpublication}[4]{
+  \vspace{0.2em}
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 \hfill {\color{accent}\href{#4}{Link~\faIcon{external-link-alt}}} & \textit{#2} \\
+    \multicolumn{2}{@{}p{\textwidth}@{}}{\textit{#3}} \\
+  \end{tabularx}
+}
+
+\newcommand{\datedentry}[3]{
+  \vspace{0.2em}
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 & \textit{#2} \\
+    \multicolumn{2}{@{}p{\textwidth}@{}}{\textit{#3}} \\
+  \end{tabularx}
+}
+
+\newenvironment{tightitemize}{
+  \begin{itemize}[leftmargin=1.25em, itemsep=0.15em, topsep=0.2em, parsep=0em, partopsep=0em]
+}{
+  \end{itemize}
+}
+
+\begin{document}
+
+\nameheader{Sheng-Jer Chen}
+\contactline{
+  \faMapMarker* \ New Taipei City, Taiwan
+  \quad $\vert$ \quad
+  \faEnvelope \ \href{mailto:samchen1999@gmail.com}{samchen1999@gmail.com}
+  \quad $\vert$ \quad
+  \faEnvelopeOpenText \ \href{mailto:D12524004@ntu.edu.tw}{D12524004@ntu.edu.tw}
+}
+\contactline{
+  \faGlobe \ \href{https://ShengJer.github.io}{Website}
+  \quad $\vert$ \quad
+  \faGithub \ \href{https://github.com/ShengJer}{GitHub}
+  \quad $\vert$ \quad
+  \faGraduationCap \ \href{https://scholar.google.com/citations?user=FzvqI3gAAAAJ&hl=en}{Google Scholar}
+  \quad $\vert$ \quad
+  \faIdBadge \ \href{https://orcid.org/0009-0006-6613-5209}{ORCID}
+}
+
+\vspace{0.6em}
+{\small
+Ph.D. candidate in Chemical Engineering at National Taiwan University and Project Research Assistant at the National Center for High-Performance Computing.
+}
+
+\section*{Education}
+\datedsubsection
+  {National Taiwan University}{Sep 2023 -- Present}
+  {Ph.D. Candidate, Chemical Engineering}{Taipei, Taiwan}
+
+\datedsubsection
+  {National Taiwan University}{Sep 2021 -- Aug 2023}
+  {M.S., Chemical Engineering}{Taipei, Taiwan}
+
+\datedsubsection
+  {Chang Gung University}{Sep 2017 -- Jun 2021}
+  {B.S., Chemical and Materials Engineering}{Taoyuan, Taiwan}
+
+\section*{Research and Professional Experience}
+\datedsubsection
+  {Project Research Assistant}{Feb 2024 -- Present}
+  {National Center for High-Performance Computing, HPC \& Cloud Technologies Division}{Taiwan}
+\begin{tightitemize}
+  \item Developed high-performance computing workflows for large-scale scientific simulation, including CUDA GPU acceleration.
+  \item Extended and applied physics-informed machine learning methods to scientific computing problems.
+  \item Supported reproducible model development and deployment for computational research projects.
+\end{tightitemize}
+
+\datedsubsection
+  {Graduate Research Assistant}{Sep 2021 -- Present}
+  {Complex Fluid Theory Lab}{Taiwan}
+\begin{tightitemize}
+  \item Developed multivariate time-series and spatiotemporal deep learning models to predict phase-field morphology evolution.
+  \item Built a GPU-enabled 3D solver for ternary nonsolvent-induced phase separation.
+  \item Integrated phase-field simulation with physics-informed neural networks for forward and inverse modeling.
+  \item Research focus: polymer field-theoretic simulation and self-consistent field theory.
+\end{tightitemize}
+
+\datedsubsection
+  {Research Assistant}{Sep 2020 -- Jun 2021}
+  {Process Engineering Lab}{Taiwan}
+\begin{tightitemize}
+  \item Designed air separation unit processes for ultra-high-purity nitrogen and oxygen production.
+  \item Developed hybrid membrane/cryogenic process models for industrial and experimental high-permeability membranes.
+  \item Applied simulated annealing for reaction-kinetic parameter regression.
+  \item Contributed to simulation and techno-economic analysis for hybrid membrane/cryogenic air-separation systems.
+\end{tightitemize}
+
+\datedsubsection
+  {Intern}{Jun 2020 -- Sep 2020}
+  {Fuburg Company}{Taiwan}
+\begin{tightitemize}
+  \item Worked on experiments and product improvement for superabsorbent polymer materials.
+  \item Conducted competitor analysis and technical data collection for company products.
+\end{tightitemize}
+
+\section*{Research Interests}
+\begin{tightitemize}
+  \item[\textcolor{accent}{\faMicrochip}] High-performance computing for scientific simulation
+  \item[\textcolor{accent}{\faAtom}] Polymer field theory and self-consistent field theory
+  \item[\textcolor{accent}{\faProjectDiagram}] Phase-field modeling and microstructure evolution
+  \item[\textcolor{accent}{\faBrain}] Physics-informed neural networks and data-driven modeling
+  \item[\textcolor{accent}{\faChartLine}] Low-dimensional representation and surrogate modeling for complex systems
+\end{tightitemize}
+
+\section*{Publications}
+\datedpublication
+  {\textbf{Chen SJ}, Yu HY. L-MAU: A multivariate time-series network for predicting the Cahn-Hilliard microstructure evolutions via low-dimensional approaches.}
+  {2024}
+  {Computer Physics Communications}
+  {https://doi.org/10.1016/j.cpc.2024.109342}
+
+\datedpublication
+  {Lin LC, \textbf{Chen SJ}, Yu HY. Connecting Structural Characteristics and Material Properties in Phase-Separating Polymer Solutions: Phase-Field Modeling and Physics-Informed Neural Networks.}
+  {2023}
+  {Polymers}
+  {https://doi.org/10.3390/polym15244711}
+
+\datedpublication
+  {\textbf{Chen SJ}, Yu BY. Rigorous simulation and techno-economic evaluation on the hybrid membrane/cryogenic distillation processes for air separation.}
+  {2021}
+  {Journal of the Taiwan Institute of Chemical Engineers}
+  {https://doi.org/10.1016/j.jtice.2021.08.001}
+
+\section*{Selected Presentations}
+\datedentry
+  {\textbf{Exploring Novel Block Copolymer Microstructures via Reciprocal-Space Niching Genetic Algorithms and Self-Consistent Field Theory}}
+  {2026}
+  {APS Global Physics Summit 2026 (APS March Meeting), Session MAR-L67, Denver, CO, USA}
+
+\datedentry
+  {\textbf{Self-Consistent Field Theory for Nanostructure Discovery}}
+  {2025}
+  {2025 Annual Conference of the Taiwanese Colloid and Interface Society and International Symposium on Interface Science, Taiwan}
+
+\datedentry
+  {\textbf{Numerical Simulation for Nonsolvent-Induced Phase Separation by Ternary Phase-Field Theory}}
+  {2024}
+  {2024 Symposium on Thermodynamics and Process Systems Engineering, Taiwan}
+
+\datedentry
+  {\textbf{Innovative Machine Learning Approaches for Predicting the Dynamics of the Phase-Field Microstructures}}
+  {2023}
+  {2023 Symposium on Thermodynamics and Process Systems Engineering, Taiwan}
+
+\datedentry
+  {\textbf{Innovative Machine Learning Approaches for Predicting the Dynamics of the Phase-Field Microstructures}}
+  {2022}
+  {2022 Chemical Engineering Conference by Taiwan Institute of Chemical Engineers (TwIChE), Taiwan}
+
+\datedentry
+  {\textbf{Hybrid Membrane Process for Cryogenic Air Separation Unit}}
+  {2021}
+  {2021 Symposium on Thermodynamics and Process Systems Engineering, Taiwan}
+
+\section*{Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.2\textwidth}X@{}}
+Programming & Python, Julia, C/C++, CUDA, MATLAB \\
+Scientific Computing & GPU acceleration, numerical methods, reproducible computational workflows, large-scale scientific simulation \\
+Research Methods & Phase-field modeling, polymer field-theoretic simulation, self-consistent field theory, physics-informed neural networks, multivariate time-series and spatiotemporal deep learning \\
+Process Systems & Gas separation process simulation, air separation units, hybrid membrane/cryogenic systems, techno-economic analysis \\
+\end{tabularx}
+
+\section*{Honors and Awards}
+\begin{tightitemize}
+  \item Honorable Mention, Student English Oral Presentation Contest, 2025 TWCIS
+  \item Honorable Mention, Student English Oral Presentation Contest, 2022 TwIChE
+  \item Excellent Presentation Award, Symposium of Thermodynamics and Process System Engineering, 2021 NTU
+  \item Second Place Award, Undergraduate Student Process Design Contest, 2021 TwIChE
+  \item Undergraduate Academic Excellence Award, Chang Gung University, 2021 CGU
+\end{tightitemize}
+
+\section*{Service and Leadership}
+\datedsubsection
+  {Vice Director}{Sep 2018 -- Sep 2019}
+  {Piano Club, Chang Gung University}{Taiwan}
+
+\end{document}

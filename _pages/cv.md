@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download PDF CV]({{ base_path }}/assets/pdf/CV.pdf){: .btn .btn--primary target="_blank" rel="noopener noreferrer"}
+
 Education
 ======
 * Ph.D. candidate in Chemical Engineering, National Taiwan University, Sep 2023 - Present
