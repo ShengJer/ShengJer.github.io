@@ -15,3 +15,15 @@
   category: "physics-informed-machine-learning-deep-learning"
   icon: "fa-line-chart"
   description: "Physics-aware ML and deep learning methods for scientific modeling and inference."
+
+- title: "Chemical Engineering"
+  slug: "chemical-engineering"
+  category: "chemical-engineering"
+  icon: "fa-industry"
+  description: "Chemical engineering topics including process systems, transport, separations, and related modeling."
+
+- title: "Others"
+  slug: "others"
+  category: "others"
+  icon: "fa-folder-open"
+  description: "Additional research topics outside the polymer field theory and chemical engineering groupings."

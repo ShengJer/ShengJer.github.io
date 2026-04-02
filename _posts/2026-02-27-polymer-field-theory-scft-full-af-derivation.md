@@ -27,6 +27,10 @@ The full derivation with complete equations is provided below.
 
 - [Download the full derivation (PDF)]({{ pdf_path }})
 
+## References
+
+- Fredrickson G. The equilibrium theory of inhomogeneous polymers. OUP Oxford; 2005 Dec 1.
+
 <iframe src="{{ pdf_path }}" width="100%" height="900" style="border: 1px solid #ddd; border-radius: 6px;" title="SCFT Full Auxiliary-Field Derivation PDF"></iframe>
 
 If the embedded viewer does not load in your browser, use the download link above.

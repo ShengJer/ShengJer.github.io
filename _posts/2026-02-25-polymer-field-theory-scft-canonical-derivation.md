@@ -40,6 +40,11 @@ The full derivation with complete equations is provided below.
 
 - [Download the full derivation (PDF)]({{ pdf_path }})
 
+## References
+
+- Sides SW, Fredrickson GH. Parallel algorithm for numerical self-consistent field theory simulations of block copolymer structure. Polymer. 2003 Sep 1;44(19):5859-66.
+- Gadelrab KR. Block copolymer self-assembly-a computational approach towards novel morphologies (Doctoral dissertation, Massachusetts Institute of Technology).
+
 <iframe src="{{ pdf_path }}" width="100%" height="900" style="border: 1px solid #ddd; border-radius: 6px;" title="SCFT Derivation PDF"></iframe>
 
 If the embedded viewer does not load in your browser, use the download link above.

@@ -27,6 +27,11 @@ The full method note is provided below.
 
 - [Download the full derivation (PDF)]({{ pdf_path }})
 
+## References
+
+- Jiang K, Xu W, Zhang P. Analytic structure of the SCFT energy functional of multicomponent block copolymers. Commun Comput Phys. 2015;17(5):1360-1387.
+- Liang Q, Jiang K, Zhang P. Efficient numerical schemes for solving the self-consistent field equations of flexible-semiflexible diblock copolymers. Math Methods Appl Sci. 2015;38(18):4553-4563.
+
 <iframe src="{{ pdf_path }}" width="100%" height="900" style="border: 1px solid #ddd; border-radius: 6px;" title="Hybrid Conjugate Gradient Method in Polymer SCFT PDF"></iframe>
 
 If the embedded viewer does not load in your browser, use the download link above.
